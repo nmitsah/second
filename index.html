@@ -1,50 +1,21 @@
-<!DOCTYPE html> 
-<html> 
-	<head> 
-	<title>Page Title</title> 
-	
-	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<!DOCTYPE html>
+<html lang="en" >
+    <head>
+        <meta charset="utf-8" />
+        <title>HTML5 GAME</title>
+        <link href="css/main.css" rel="stylesheet" type="text/css" />
 
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
-	<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
-	<script type="text/javascript" src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
-</head> 
+        <!--[if lt IE 9]>
+          <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <script src="jquery.js"></script>
+        <script src="index.js"></script>
+    </head>
+    <body>
+    <br><br><br><br><br><br><br><br><br><br>
 
-<body> 
-
-<!-- Start of first page -->
-<div data-role="page" id="foo">
-
-	<div data-role="header">
-		<h1>Hi you!</h1>
-	</div><!-- /header -->
-
-	<div data-role="content">	
-		<p><img style="width: 100%;" src="http://animalia-life.com/data_images/dog/dog4.jpg"/></p>		
-		<p>View internal page called <a href="#bar">bar</a></p>	
-	</div><!-- /content -->
-
-	<div data-role="footer">
-		<h4>Page Footer</h4>
-	</div><!-- /footer -->
-</div><!-- /page -->
-
-
-<!-- Start of second page -->
-<div data-role="page" id="bar">
-
-	<div data-role="header">
-		<h1>Bar</h1>
-	</div><!-- /header -->
-
-	<div data-role="content">	
-		<p>I'm the second in the source order so I'm hidden when the page loads. I'm just shown if a link that references my ID is beeing clicked.</p>		
-		<p><a href="#foo">Back to foo</a></p>	
-	</div><!-- /content -->
-
-	<div data-role="footer">
-		<h4>Page Footer</h4>
-	</div><!-- /footer -->
-</div><!-- /page -->
-</body>
+        <div class="container">
+            <canvas id="scene" width="1000" height="600" tabindex="1"></canvas>
+        </div>
+    </body>
 </html>
